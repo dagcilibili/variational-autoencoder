@@ -1,0 +1,170 @@
+## ignore all files
+*
+## un-ignore all files with extensions
+!*.*
+!*/
+
+## DS_Store
+*.DS_Store
+
+
+## Core latex/pdflatex auxiliary files:
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+
+## Intermediate documents:
+*.dvi
+*-converted-to.*
+# these rules might exclude image files for figures etc.
+# *.ps
+# *.eps
+*.pdf
+
+## Bibliography auxiliary files (bibtex/biblatex/biber):
+*.bbl
+*.bcf
+*.blg
+*-blx.aux
+*-blx.bib
+*.brf
+*.run.xml
+
+# Build tool auxiliary files:
+*.fdb_latexmk
+*.synctex
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+
+## Auxiliary and intermediate files from other packages:
+
+# algorithms
+*.alg
+*.loa
+
+# achemso
+acs-*.bib
+
+# amsthm
+*.thm
+
+# beamer
+*.nav
+*.snm
+*.vrb
+
+#(e)ledmac/(e)ledpar
+*.end
+*.[1-9]
+*.[1-9][0-9]
+*.[1-9][0-9][0-9]
+*.[1-9]R
+*.[1-9][0-9]R
+*.[1-9][0-9][0-9]R
+*.eledsec[1-9]
+*.eledsec[1-9]R
+*.eledsec[1-9][0-9]
+*.eledsec[1-9][0-9]R
+*.eledsec[1-9][0-9][0-9]
+*.eledsec[1-9][0-9][0-9]R
+
+# glossaries
+*.acn
+*.acr
+*.glg
+*.glo
+*.gls
+
+# gnuplottex
+*-gnuplottex-*
+
+# hyperref
+*.brf
+
+# knitr
+*-concordance.tex
+*.tikz
+*-tikzDictionary
+
+# listings
+*.lol
+
+# makeidx
+*.idx
+*.ilg
+*.ind
+*.ist
+
+# minitoc
+*.maf
+*.mtc
+*.mtc0
+
+# minted
+_minted*
+*.pyg
+
+# morewrites
+*.mw
+
+# nomencl
+*.nlo
+
+# sagetex
+*.sagetex.sage
+*.sagetex.py
+*.sagetex.scmd
+
+# sympy
+*.sout
+*.sympy
+sympy-plots-for-*.tex/
+
+# todonotes
+*.tdo
+
+# xindy
+*.xdy
+
+# WinEdt
+*.bak
+*.sav
+
+# python
+*.pyc
+.ipynb_checkpoints
+
+# Matlab files
+*.asv
+*.m~
+sgd.sublime-workspace
+sgd.sublime-project
+227C.sublime-workspace
+227C.sublime-project
+raaz-vae-mnist-subgraph-cost-test.ipynb
+t10k-images-idx3-ubyte.gz
+t10k-labels-idx1-ubyte.gz
+train-images-idx3-ubyte.gz
+train-labels-idx1-ubyte.gz
+model.ckpt
+model.ckpt.meta
+classify_image_graph_def.pb
+cropped_panda.jpg
+imagenet_2012_challenge_label_map_proto.pbtxt
+imagenet_synset_to_human_label_map.txt
+inception-2015-12-05.tgz
+events.out.tfevents.1478206281.C02PX3BHFVH8
+raaz-aws-mnist.ipynb
+batches.meta
+readme.html
+vgg16_weights.npz
+raaz-data-entire-cifar.npz
+raaz-data-entire-mnist.npz
+get_cifar_datasets.sh
+raaz-data-entire-mnist.npz.zip
+MNIST_data.zip
