@@ -380,6 +380,22 @@ class VariationalAutoencoder(object):
             t1 = time.time()
             print("Model saved")
 
+    def generate(self, z = None, n = 1, checkpoint = None):
+        """ Generate data from the trained model
+        If z is not defined, will feed random normal as input
+        """
+        if z is None:
+            z = np.random.random(size=(n,self.LATENTDIM))
+        if checkpoint is None:
+            checkpoint = self.checkpoint_file
+
+        saver = tf.train.Saver(self.parameters)
+        with tf.Session() as sess:
+            saver.restore(sess, checkpoint)
+            generated_images = sess.run((self.x_reconstr_mean),feed_dict={self.z: z})
+
+        return generated_images
+
     def reconstruct_images(self, h_num = 5, v_num = 2):
 
         # show target features and estimated features
