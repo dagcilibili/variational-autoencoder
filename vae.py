@@ -51,7 +51,7 @@ class VariationalAutoencoder(object):
 
         self._make_log_information()
         self._make_summaries()
-        self._load_datasets(num_train = self.NUM_TRAIN)
+        self.datasets = None
 
         self.summary_writer = tf.train.SummaryWriter(self.LOG_DIR, graph=tf.get_default_graph())
 
@@ -271,6 +271,10 @@ class VariationalAutoencoder(object):
         self.merged_summaries = tf.merge_all_summaries()
 
     def train(self, num_epochs_to_display=1):
+        if self.datasets is None:
+            print('loading datasets')
+            self._load_datasets(num_train = self.NUM_TRAIN)
+
         tc = 0
         fc = 0
         lc = 0

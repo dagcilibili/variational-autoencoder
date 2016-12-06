@@ -1,6 +1,6 @@
 import numpy as np
 import tensorflow as tf
-from vae_rahan import *
+from vae import *
 import argparse
 
 np.random.seed(0)
