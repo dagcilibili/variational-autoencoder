@@ -193,7 +193,7 @@ class VariationalAutoencoder(object):
         # scale up to size 16 x 16 x 64
         resized_1 = None
         with tf.name_scope('dec_resize1'):
-            if tf.__version__ == '0.12.0-rc0':
+            if tf.__version__ == '0.12.0-rc0' or tf.__version__=='0.11.0':
                 resized_1 = tf.image.resize_images(g_1_images, [16, 16], method=tf.image.ResizeMethod.BILINEAR)
             else:
                 resized_1 = tf.image.resize_images(g_1_images, 16, 16, method=tf.image.ResizeMethod.BILINEAR)
@@ -219,7 +219,7 @@ class VariationalAutoencoder(object):
         # scale up to size 32 x 32 x 32
         resized_2 = None
         with tf.name_scope('dec_resize2'):
-            if tf.__version__ == '0.12.0-rc0':
+            if tf.__version__ == '0.12.0-rc0' or tf.__version__=='0.11.0':
                 resized_2 = tf.image.resize_images(self.dec_conv1_2, [32, 32], method=tf.image.ResizeMethod.BILINEAR)
             else:
                 resized_2 = tf.image.resize_images(self.dec_conv1_2, 32, 32, method=tf.image.ResizeMethod.BILINEAR)
